@@ -494,6 +494,7 @@ ol {
   display: inline-block;
   position: relative;
   padding-left: 50px;
+  text-align: center;
 }
 
 .header__nav__social:before {
@@ -534,11 +535,17 @@ ol {
   margin-top: 15px;
 }
 
-.UserProfileImgAndResume>img {
+/* .UserProfileImgAndResume>img {
   height: 306px;
   width: 267px;
   margin: auto;
   border-radius: 50%;
+} */
+.UserProfileImgAndResume>img {
+  width: 359px;
+  margin: auto;
+  border-radius: 15%;
+  border: 5px solid #2c1152;
 }
 
 .hero__slider.owl-carousel .owl-item.active .hero__text span {
@@ -641,6 +648,9 @@ ol {
   -o-transition: all, 0.7s;
   transition: all, 0.7s;
 }
+
+
+
 
 /*---------------------
   Work
@@ -2458,4 +2468,19 @@ ol {
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
   }
+}
+
+.skills__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills__item img {
+  height: 75px !important;
+  width: 75px !important;
+}
+
+.skills__item h4 {
+  margin: 0 !important;
 }
