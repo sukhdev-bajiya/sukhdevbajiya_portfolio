@@ -164,7 +164,7 @@ ol {
 }
 
 .section-titleLunSkillset h2 span {
-  color: #b136df;
+  color: #c265e5;
 }
 
 .section-titleLunSkillset h3 {
@@ -2483,4 +2483,40 @@ ol {
 
 .skills__item h4 {
   margin: 0 !important;
+}
+
+.toggle_to_top {
+  position: fixed;
+  right: -75px;
+  bottom: 20px;
+  width: 100px;
+  background: #141b49f0;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px 0 0 5px;
+  z-index: 9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  padding-top: 0;
+  font-size: 20px;
+}
+
+.toggle_to_top:hover {
+  right: 0;
+}
+
+.toggle_to_top p {
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  padding-left: 10px;
+  color: white;
+}
+
+.toggle_to_top span {
+  color: white;
+  transform: rotate(270deg);
+  margin-top: 3px;
 }

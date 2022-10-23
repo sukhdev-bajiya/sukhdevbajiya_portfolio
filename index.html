@@ -132,7 +132,7 @@
                         <div class="section-title">
                             <h2>LET ME INTRODUCE MYSELF</h2>
                         </div>
-                        <p class="services__ptagMyupdateTell">I love problem solving and programing
+                        <p class="services__ptagMyupdateTell">I love problem solving and programming
                             <br />
                             <br />
                             I am fluent in languages like <span>Javascript and Java.</span>
@@ -178,8 +178,8 @@
                         </div>
                         <p class="services__ptagMyupdateTell">Hi Everyone, I am <span>Sukhdev Bajiya</span> from
                             <span>Jaipur, India</span>. <br>
-                            I am an aspiring full stack developer and I have completed B.A. from
-                            University of Rajasthan.
+                            I am an aspiring full-stack developer and I have completed B.A. from
+                            The University of Rajasthan.
                             <br>
                             <br>
                             Apart from coding, some other activities that I love to do!<br>
@@ -194,14 +194,15 @@
         </div>
     </section>
     <!-- Services Section End -->
-    <!-- Counter Section Begin -->
-    <section class="latest spad" id="ourblog">
+    <!-- skills Section Begin -->
+    <section class="latest spad" id="skills">
         <div class="container">
             <div class="row">
                 <div class="section-titleLunSkillset" id="skills">
                     <h2>Professional <span>Skillset</span></h2>
                 </div>
             </div>
+            <hr style="width: 50%; border: 1px dashed #bd74bd;">
             <div class="section-titleLunSkillset">
                 <h3 style="margin: 20px 0;">Frontend</h3>
             </div>
@@ -263,6 +264,8 @@
                     </div>
                 </div>
             </div>
+            <!-- <hr style="background: white; width: 50%;"> -->
+            <hr style="width: 75%; border: 1px dashed #bd74bd;">
             <div class="section-titleLunSkillset">
                 <h3 style="margin: 20px 0;">Backend</h3>
             </div>
@@ -294,6 +297,7 @@
                     </div>
                 </div>
             </div>
+            <hr style="width: 75%; border: 1px dashed #bd74bd;">
             <div class="section-titleLunSkillset" id="skills">
                 <h3 style="margin: 20px 0;"> Software</h3>
             </div>
@@ -358,7 +362,7 @@
             </div>
         </div>
     </section>
-    <!-- Counter Section End -->
+    <!-- skills Section End -->
 
 
     <!-- Team Section Begin -->
@@ -382,7 +386,7 @@
                     <div class="team__item set-bg" data-setbg="img/team/gomasai.jpg" style="margin: 10px;">
                         <div class="team__item__text">
                             <h4>GoMasai Search Engine</h4>
-                            <p>GoMasai is a search engine in which user can search anything ..</p>
+                            <p>GoMasai is a search engine in which users can search for anything ..</p>
 
                             <h4>Tech Stack</h4>
                             <div class="team__item__social">
@@ -775,19 +779,23 @@
             <div class="footer__copyright">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
                         <p class="footer__copyright__text">Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
                             | Designed and Developed by Sukhdev Bajiya
                         </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="toggle_to_top" onclick="gotopageto()">
+        <span>➤</span>
+        <p>Go Top</p>
+    </div>
     <!-- Footer Section End -->
 </body>
 <script>
@@ -829,6 +837,11 @@
             }
         };
         xhr.send(data);
+    }
+
+    function gotopageto() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 </script>
 <!-- Js Plugins -->
