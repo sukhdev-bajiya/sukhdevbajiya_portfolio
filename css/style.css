@@ -74,7 +74,6 @@ canvas {
   display: block;
   position: absolute;
   width: 100%;
-  z-index: 5;
 }
 
 h1,
@@ -114,11 +113,12 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
   color: #adadad;
   font-weight: 400;
   line-height: 26px;
+  cursor: text;
   margin: 0 0 15px 0;
 }
 
@@ -384,6 +384,10 @@ ol {
   z-index: 9;
 }
 
+.header>.container>.row {
+  display: flex;
+}
+
 .header__logo {
   padding: 30px 0;
   width: 250px;
@@ -394,8 +398,10 @@ ol {
 }
 
 .header__nav__option {
-  text-align: right;
+  display: flex;
+  /* text-align: right; */
   padding: 28px 0px;
+  justify-content: flex-end;
 }
 
 .header__nav__menu {
@@ -490,14 +496,14 @@ ol {
   transition: all, 0.3s;
 }
 
-.header__nav__social {
+/* .header__nav__social {
   display: inline-block;
   position: relative;
-  padding-left: 50px;
+  padding-left: 30px;
   text-align: center;
-}
+} */
 
-.header__nav__social:before {
+/* .header__nav__social:before {
   position: absolute;
   left: 0;
   top: 4px;
@@ -505,12 +511,38 @@ ol {
   width: 1px;
   background: rgba(225, 225, 225, 0.2);
   content: "";
-}
+} */
 
-.header__nav__social a {
+/* .header__nav__social a {
   color: #ffffff;
   font-size: 15px;
   margin-right: 18px;
+}
+
+.header__nav__social a:last-child {
+  margin-right: 0;
+} */
+
+.header__nav__social {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.header__nav__social a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #ffffff;
+  height: 30px;
+  width: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 6px;
 }
 
 .header__nav__social a:last-child {
@@ -1003,7 +1035,8 @@ ol {
   margin-bottom: 22px;
 }
 
-.callto__text p {
+.callto__text p,
+.callto__text>p>a {
   font-size: 15px;
   color: #ffffff;
   opacity: 0.7;
@@ -1011,7 +1044,7 @@ ol {
   margin-bottom: 55px;
 }
 
-.callto__text a {
+.callto__text>a {
   color: #ffffff;
   background: #00bfe7;
   font-size: 15px;
